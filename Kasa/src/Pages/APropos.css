@@ -1,0 +1,55 @@
+.a-propos {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.a-propos .banner {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.a-propos-dropdowns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  max-width: 1600px;
+  margin: 1rem auto;
+  margin-top: 25px;
+}
+
+.banner-apropos::before {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .a-propos .banner {
+    margin: 0 auto;
+    margin-bottom: 0px;
+  }
+
+  .banner-apropos ~ .dropdown .dropdown-header {
+    padding: 0.6rem 1rem;
+  }
+
+  .banner-apropos ~ .dropdown .dropdown-header h2 {
+    font-size: 1rem;
+  }
+
+  .banner-apropos ~ .dropdown .dropdown-content.open {
+    padding: 0.8rem 1rem;
+  }
+
+  .fiche-logement-dropdowns .dropdown .dropdown-header {
+    padding: 0.6rem 1rem;
+  }
+
+  .fiche-logement-dropdowns .dropdown .dropdown-header h2 {
+    font-size: 1rem;
+  }
+
+  .fiche-logement-dropdowns .dropdown .dropdown-content.open {
+    padding: 0.8rem 1rem;
+  }
+}

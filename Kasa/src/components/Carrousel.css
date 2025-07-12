@@ -1,0 +1,62 @@
+.carrousel {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  overflow: hidden;
+}
+
+.carrousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 9rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-button {
+  left: 20px;
+}
+
+.next-button {
+  right: 20px;
+}
+
+.carrousel-counter {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  color: white;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .carrousel {
+    height: 255px;
+  }
+
+  .carrousel img {
+    object-fit: cover;
+    height: 255px;
+  }
+
+  .prev-button,
+  .next-button {
+    font-size: 3rem;
+  }
+
+  .carrousel-counter {
+    font-size: 14px;
+    bottom: 10px;
+  }
+}

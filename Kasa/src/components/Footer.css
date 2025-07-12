@@ -1,0 +1,35 @@
+footer {
+  color: #ffffff;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  bottom: 0;
+}
+
+.logo-footer {
+  height: 50px;
+  width: auto;
+  margin: 25px;
+}
+
+@media (max-width: 768px) {
+  .logo-footer {
+    height: 37.5px;
+    margin-bottom: 0;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    margin: 15px auto;
+    width: 60%;
+  }
+}
